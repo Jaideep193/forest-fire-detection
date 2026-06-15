@@ -1,0 +1,33 @@
+# Large raw data file (re-download from NASA FIRMS)
+fire_archive_J1V-C2_762685.csv
+
+# Generated synthetic data (re-run Stage 1 to recreate)
+data/synthetic/
+data/processed/
+
+# Trained model binary (re-run Stage 3 to recreate)
+models/
+
+# GeoTIFF outputs (re-run pipeline to recreate; PNGs/GIF are committed)
+outputs/prediction_maps/*.tif
+outputs/spread_maps/*.tif
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE / OS
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
