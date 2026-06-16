@@ -3,7 +3,7 @@
 # 🔥 Forest Fire Detection & Spread Simulation
 ### AI/ML-Powered Wildfire Intelligence for Uttarakhand, India
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.10%2B-h3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-1.3%2B-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![Rasterio](https://img.shields.io/badge/Rasterio-GeoTIFF-4CAF50?style=for-the-badge&logo=mapbox&logoColor=white)
 ![Resolution](https://img.shields.io/badge/Resolution-30%20m%20pixel-E91E63?style=for-the-badge)
@@ -275,7 +275,7 @@ Forest_fire_detection/
 ### 1. Clone / Download
 
 ```bash
-git clone https://github.com/your-username/forest-fire-detection.git
+git clone https://github.com/Jaideep193/forest-fire-detection.git
 cd forest-fire-detection
 ```
 
@@ -307,6 +307,8 @@ matplotlib>=3.7.0
 Pillow>=9.0.0
 pandas>=2.0.0
 tqdm>=4.65.0
+torch>=2.0.0
+torchvision>=0.15.0
 ```
 
 > **Windows note:** If `rasterio` fails to install via pip, use the pre-built wheel from [Christoph Gohlke's repository](https://www.lfd.uci.edu/~gohlke/pythonlibs/#rasterio) or install via `conda install -c conda-forge rasterio`.
@@ -461,6 +463,7 @@ RandomForestClassifier
   n_estimators = 100
   max_depth    = 10
   max_features = 'sqrt'
+  min_samples_leaf = 20
   class_weight = 'balanced'   ← handles severe fire/no-fire imbalance
   oob_score    = True
   n_jobs       = 1            ← single process (Windows shared-memory safe)
@@ -607,6 +610,8 @@ matplotlib  >= 3.7     All visualisations, animation
 Pillow      >= 9.0     GIF export (PillowWriter)
 pandas      >= 2.0     VIIRS CSV loading
 tqdm        >= 4.65    Progress bars
+torch         >= 2.0     U-Net reference code (defined but not used in active pipeline)
+torchvision   >= 0.15    U-Net reference code (defined but not used in active pipeline)
 ```
 
 ---
